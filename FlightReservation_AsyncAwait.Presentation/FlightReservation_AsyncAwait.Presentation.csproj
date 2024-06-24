@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FlightReservation_AsyncAwait.Application\FlightReservation_AsyncAwait.Application.csproj" />
     <ProjectReference Include="..\FlightReservation_AsyncAwait.Domain\FlightReservation_AsyncAwait.Domain.csproj" />
   </ItemGroup>
 
