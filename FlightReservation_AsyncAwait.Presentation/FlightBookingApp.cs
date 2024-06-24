@@ -30,6 +30,10 @@ namespace FlightReservation_AsyncAwait.Presentation
             var selectedFlight = flights.First();
             Console.WriteLine($"\nReservando vuelo {selectedFlight.FlightNumber}...");
 
+            Console.WriteLine($"Hora de salida {selectedFlight.DepartureTime}");
+
+            Console.WriteLine($"Hora de llegada {selectedFlight.ArrivalTime}");
+
             var bookingNumber = await _bookingService.BookFlightAsync(selectedFlight);
             Console.WriteLine($"Reserva completada. Número de reserva: {bookingNumber}");
 
